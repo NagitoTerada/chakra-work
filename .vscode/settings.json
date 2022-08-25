@@ -1,0 +1,25 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "githubIssues.issueBranchTitle": "feature/${issueNumber}",
+  "githubIssues.queries": [
+    {
+      "label": "My Issues",
+      "query": "default"
+    },
+    {
+      "label": "Created Issues",
+      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+    },
+    {
+      "label": "Recent Issues",
+      "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+    }
+  ],
+  "git.branchProtection": ["main", "develop"],
+  "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+  "todo-tree.regex.regex": "(//|#|\\{|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)"
+}
